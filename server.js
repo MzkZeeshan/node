@@ -9,5 +9,5 @@ console.log("we are connected");
 
   });
   app.use(cors());
-app.listen("3000",(req,res)=>console.log("server run"));
+app.listen(process.env.PORT || 3000,(req,res)=>console.log("server run"));
 app.use('/',require('./routes/index.js'));
